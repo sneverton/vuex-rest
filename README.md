@@ -5,7 +5,7 @@ Utilitário para Vuex e API Rest.
 Usando npm:
 
 ```bash
-$ npm install axios
+$ npm install @scriptn/vuex-rest
 ```
 
 ## Example
