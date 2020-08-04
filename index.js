@@ -18,7 +18,7 @@ const VuexRest = {
       const getters = {
         getByProperty: store.getters[`${module}/getByProperty`],
         getById: store.getters[`${module}/getById`],
-        filterByProperty: store.getters[`${module}/filterByProperty`]
+        filterByProperty: store.getters[`${module}/filterByProperty`],
       };
 
       const rest = {
@@ -35,13 +35,13 @@ const VuexRest = {
             return store.dispatch(`${module}/upload`, {
               id: a,
               prop: b,
-              file: c
+              file: c,
             });
           else if (Number.isInteger(a) && b instanceof File)
             return store.dispatch(`${module}/upload`, {
               id: a,
               file: b,
-              params: c
+              params: c,
             });
           else if (a instanceof File)
             return store.dispatch(`${module}/upload`, { file: a, params: b });
@@ -53,7 +53,7 @@ const VuexRest = {
             return store.dispatch(`${module}/set`, {
               id: a,
               data: b,
-              params: c
+              params: c,
             });
           else if (typeof a === "object")
             return store.dispatch(`${module}/set`, { data: a, params: b });
@@ -66,12 +66,12 @@ const VuexRest = {
         },
         getters,
         list: store.state[module].list,
-        item: store.state[module].item
+        item: store.state[module].item,
       };
 
       return rest;
     };
-  }
+  },
 };
 
 export { http };

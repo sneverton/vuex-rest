@@ -3,7 +3,7 @@
  *
  * @param {string} str
  */
-const camelCaseToHyphen = str =>
-  str.replace(/[A-Z]/g, match => "-" + match.toLocaleLowerCase());
+const camelCaseToHyphen = (str) =>
+  str.replace(/[A-Z]/g, (match) => "-" + match.toLocaleLowerCase());
 
 export default camelCaseToHyphen;

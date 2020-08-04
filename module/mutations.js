@@ -4,14 +4,14 @@ const mutations = {
     else state.list = [];
   },
   refreshItem: (state, id) => {
-    const item = state.list.find(v => v.id == id);
+    const item = state.list.find((v) => v.id == id);
     if (item) state.item = item;
   },
   udateItem: (state, { id, data }) => {
     state.itemId = id;
     state.item = data;
 
-    const item = state.list.find(v => v.id == id);
+    const item = state.list.find((v) => v.id == id);
 
     if (!item) {
       state.list.push({ ...data, id });
@@ -20,14 +20,14 @@ const mutations = {
     }
   },
   setProperty: (state, { id, prop, data }) => {
-    const item = state.list.find(v => v.id == id);
+    const item = state.list.find((v) => v.id == id);
     if (item) item[prop] = data;
   },
   remove: (state, id) =>
     state.list.splice(
-      state.list.findIndex(v => v.id == id),
+      state.list.findIndex((v) => v.id == id),
       1
-    )
+    ),
 };
 
 export default mutations;

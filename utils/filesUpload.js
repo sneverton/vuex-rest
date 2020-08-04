@@ -18,7 +18,7 @@ const filesUpload = (url, files, { auth, data, accept }) => {
   document.dispatchEvent(
     new CustomEvent("uploadstart", {
       progress: 0,
-      target: url
+      target: url,
     })
   );
 
@@ -34,17 +34,17 @@ const filesUpload = (url, files, { auth, data, accept }) => {
             if (req.status >= 400) reject(req.response);
           }
         })
-    )
+    ),
   };
 
-  req.upload.addEventListener("progress", e => {
+  req.upload.addEventListener("progress", (e) => {
     res.progress = (e.loaded / e.total) * 100;
     document.dispatchEvent(
       new CustomEvent("uploadprogress", {
         detail: {
           progress: res.progress,
-          target: url
-        }
+          target: url,
+        },
       })
     );
   });
@@ -66,8 +66,8 @@ const filesUpload = (url, files, { auth, data, accept }) => {
     new CustomEvent("uploadend", {
       detail: {
         progress: 100,
-        target: url
-      }
+        target: url,
+      },
     })
   );
 
