@@ -1,0 +1,24 @@
+{
+  "name": "@scriptn/vuex-rest",
+  "version": "1.0.0",
+  "description": "Utilitário para Vuex e API Rest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneverton/vuex-rest.git"
+  },
+  "keywords": [
+    "vuex",
+    "rest",
+    "utils"
+  ],
+  "author": "Everton Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sneverton/vuex-rest/issues"
+  },
+  "homepage": "https://github.com/sneverton/vuex-rest#readme"
+}
