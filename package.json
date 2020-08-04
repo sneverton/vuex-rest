@@ -1,6 +1,6 @@
 {
   "name": "@scriptn/vuex-rest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilitário para Vuex e API Rest.",
   "main": "index.js",
   "scripts": {
