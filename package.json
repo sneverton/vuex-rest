@@ -1,6 +1,6 @@
 {
   "name": "@scriptn/vuex-rest",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "Utilitário para Vuex e API Rest.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/sneverton/vuex-rest#readme",
   "dependencies": {
-    "axios": ">=0.19.2",
-    "vuex": ">=3.5.1"
+    "axios": ">=0.19.2"
   }
 }
